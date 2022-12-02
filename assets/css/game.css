@@ -1,0 +1,197 @@
+/*Game Engine*/
+#main-game{
+	width: 50%;
+  	margin: 0 auto;
+	height: 100vh;
+	width: 100vh;
+	position: relative;
+}
+.main-game-playing{
+	margin-top: 15px;
+	margin-left: 30px;
+	width: 300px;
+	height: 300px;
+}
+#text{
+	font-size: 20px;
+	background-color: #1ABC9C;
+	color: white;
+	text-align: center;
+	transition: all 0.2s;
+}
+#button{
+	width: 50%;
+	margin-left: 25vh;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border: 3px solid #1ABC9C;
+	transition: all 0.2s;
+}
+#button:hover{
+	color: white;
+	background-color: #19B5FE;
+}
+#button-jwb{
+	width: 50%;
+	margin-left: 25vh;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border: 3px solid #1ABC9C;
+	transition: all 0.2s;
+	visibility: hidden;
+}
+#button-jwb:hover{
+	color: white;
+	background-color: #19B5FE;
+}
+#skip{
+	margin-left: 50px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	background-color: #1ABC9C;
+	color: #34495E;
+	position: absolute;
+	transition: all 0.3s;
+	border: 3px solid #19B5FE; 
+}
+#skip:hover{
+	background-color: #e74c3c;
+	color: white;
+}
+.form-control{
+	font-size: 20px;
+	background-color: #1ABC9C;
+	color: white;
+	text-align: center;
+	transition: all 0.2s;
+}
+#img{
+	border: 5px solid #607D8B;
+	width: 100vh;
+	height: 70vh;
+}
+#img-jwb{
+	border: 5px solid #607D8B;
+	width: 100vh;
+	height: 70vh;
+	visibility: hidden;
+}
+.imageTF{
+	width: 50px;
+	height: 50px;
+}
+#imageT{
+	visibility: hidden;
+}
+#imageF{
+	visibility: hidden;
+}
+.main-game-input{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-bottom: 3px solid #6C7A89;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 15px;
+	color: #1ABC9C;
+	transition: all 0.5s;
+	position: relative;
+}
+#text_nama{
+	border: 0;
+	color: white;
+	background-color: #1ABC9C;
+}
+#button_nama{
+	margin-top: 10px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: white;
+	background-color: #1ABC9C;
+	border: 0;
+}
+#playing{
+	visibility: hidden;
+	position: absolute;
+}
+.main-game-player{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-bottom: 3px solid #6C7A89;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	transition: all 0.5s;
+}
+.main-game-player:hover{
+	background-color: #2C3E50;
+}
+
+.main-game-score{
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-bottom: 3px solid #6C7A89;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	transition: all 0.5s;
+}
+.main-game-score:hover{
+	background-color: #2C3E50;
+}
+.main-game-life{
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-bottom: 3px solid #6C7A89;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	transition: all 0.5s;
+	position: relative;
+}
+.main-game-life-modar{
+	position: absolute;;
+	visibility: hidden;
+}
+.main-game-life:hover{
+	background-color: #2C3E50;
+}
+.life{
+	visibility: hidden;
+}
+.main-game-TF{
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-bottom: 3px solid #6C7A89;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	transition: all 0.5s;
+}
+.main-game-TF:hover{
+	background-color: #2C3E50;
+}
+
+.lvl_1{
+	position: absolute;
+}
+.lvl_n{
+	position: absolute;
+	visibility: hidden;
+}
+#button-next{
+	margin-top: 14px;
+	position: absolute;
+	width: 50%;
+	margin-left: 25vh;
+	font-family: "Arial Black", Gadget, sans-serif;
+	border: 3px solid #1ABC9C;
+	transition: all 0.2s;
+}
+#button-next:hover{
+	color: white;
+	background-color: #19B5FE;
+}

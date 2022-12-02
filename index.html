@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kelompok 1 - Tebak Gambar</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/game.css">
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="me"  href="https://twitter.com/twitterdev">
+</head>
+<body>
+
+<div class="header">
+	<img src="assets/img/brandijo.png">
+	<a href="index.html" class="nav-trigger">Tebak Gambar</a>
+</div>
+<!-- API SHARE FACEBOOK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Web -->
+  <div class="row">
+    <div class="col-md-2">
+    	<div class="side-nav">
+	    	<!-- <nav> -->
+	    		<ul>
+		    		<li style="background-color: #2C3E50;">
+			    		<a href="index.html">
+			    		<span class="fa fa-home"></span>
+			    		<span> Home</span>
+			    		</a>
+		    		</li>
+		    		<li>
+			    		<a href="description.html">
+			    		<span class="fa fa-newspaper-o"></span>
+			    		<span> Description</span>
+			    		</a>
+		    		</li>
+		    		<li>
+			    		<a href="howto.html">
+			    		<span class="fa fa-book"></span>
+			    		<span> Cara Bermain</span>
+			    		</a>
+		    		</li>
+		    		<li>
+			    		<a href="score.html">
+			    		<span class="fa fa-list-alt"></span>
+			    		<span> Score</span>
+			    		</a>
+		    		</li>
+		    		<li>
+			    		<a href="aboutus.html">
+			    		<span class="fa fa-users"></span>
+			    		<span> Pembuat Web</span>
+			    		</a>
+		    		</li>		    		
+	    		</ul>
+	    	<!-- </nav> -->
+    	</div>
+		
+    </div>
+
+    <div class="col-md-7">
+	  	<div class="main-content">
+	  		<div id="main-game" class="main-game">
+	  			
+	  			<div class="lvl_1">
+		  			<form id="lvl_1">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 4.png"><br><br>
+						<input id="text" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_1();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_1_skip();">
+					</form>		
+	  			</div>
+				<div class="lvl_2">
+		  			<form id="lvl_2" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 9.png"><br><br>
+						<input id="text2" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_2();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_2_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_3">
+		  			<form id="lvl_3" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 10.png"><br><br>
+						<input id="text3" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_3();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_3_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_4">
+		  			<form id="lvl_4" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 5.png"><br><br>
+						<input id="text4" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_4();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_4_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_5">
+		  			<form id="lvl_5" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 8.png"><br><br>
+						<input id="text5" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_5();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_5_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_6">
+		  			<form id="lvl_6" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/kerajaan bali.png"><br><br>
+						<input id="text6" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_6();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_6_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_7">
+		  			<form id="lvl_7" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/kerajaan tarumanagara.png"><br><br>
+						<input id="text7" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_7();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_7_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_8">
+		  			<form id="lvl_8" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/kerajaan sunda.png">
+						<br><br>
+						<input id="text8" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_8_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_8_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_8_jwb">
+		  			<form id="lvl_8_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/kerajaan sunda.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_8_go();">
+						
+					</form>		
+	  			</div>
+	  			<div class="lvl_9">
+		  			<form id="lvl_9" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/kerajaan kutai.png">
+						<br><br>
+						<input id="text9" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_9_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_9_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_9_jwb">
+		  			<form id="lvl_9_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/kerajaan kutai.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_9_go();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_10">
+		  			<form id="lvl_10" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/Kerajaan singasari.png">
+						<br><br>
+						<input id="text10" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_10_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_10_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_10_jwb">
+		  			<form id="lvl_10_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/Kerajaan singasari.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_10_go();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_11">
+		  			<form id="lvl_11" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 1.png">
+						<br><br>
+						<input id="text11" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_11_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_11_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_11_jwb">
+		  			<form id="lvl_11_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 1.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_11_go();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_12">
+		  			<form id="lvl_12" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 3.png">
+						<br><br>
+						<input id="text12" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_12_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_12_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_12_jwb">
+		  			<form id="lvl_12_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 3.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_12_go();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_13">
+		  			<form id="lvl_13" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 6.png">
+						<br><br>
+						<input id="text13" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_13_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_13_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_13_jwb">
+		  			<form id="lvl_13_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 6.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_13_go();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_14">
+		  			<form id="lvl_14" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 2.png">
+						<br><br>
+						<input id="text14" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_14_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_14_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_14_jwb">
+		  			<form id="lvl_14_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 2.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_14_go();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_15">
+		  			<form id="lvl_15" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 4.png">
+						<br><br>
+						<input id="text15" class="form-control" type="text" name="text"><br>
+						<input id="button" class="btn btn-default" type="button" name="button" value="TEBAK" onclick="level_15_jwb();">
+						<input id="skip" class="btn btn-default" type="button" name="button" value="SKIP" onclick="level_15_skip();">
+					</form>		
+	  			</div>
+	  			<div class="lvl_15_jwb">
+		  			<form id="lvl_15_jwb" class="lvl_n">
+		  				<br>
+						<img id="img" class="gambar-soal" src="assets/img/soal no 4.png">
+						<br><br>
+						<br><br>
+						<input id="button-next" class="btn btn-default" type="button" name="button" value="NEXT" onclick="level_15_go();">
+					</form>		
+	  			</div>
+		</div>
+	  	</div>
+  	</div>
+  	
+  	<div class="col-md-3">
+  		<div class="right-content">
+  				<li>
+					 <div id="playing" class="main-game-playing">
+  						<form >
+  							<img src="assets/img/play.png">
+  						</form>
+  					</div>  				
+  				</li>
+  				<li>
+  					<div class="main-game-input">
+						<form id="input-nama">
+							Masukkan nama :
+							<input id="text_nama" class="form-control" type="text" name="nama">
+							<input id="button_nama" class="btn btn-default" type="button" name="ok-nama" value="SUBMIT" onclick="nama_play();">
+						</form>	
+					</div>
+  				</li>  				
+  				<li>
+  					<div class="main-game-player">
+						<p style="font-size: 15px; color: white;">Player :<br></p>
+					</div>
+  				</li>
+	  			<li>
+	  				<div class="main-game-score">
+						Score
+						<div id="ok">
+							<label id="score"></label>
+						</div>
+					</div>
+	  			</li>
+	  			<li>
+	  				<div class="main-game-life">
+						Life<br>
+						<div class="main-game-life-modar">
+							<span id="mati1" class="fa fa-heart-o"></span>
+							<span id="mati2" class="fa fa-heart-o"></span>
+							<span id="mati3" class="fa fa-heart-o"></span>
+							<span id="mati4" class="fa fa-heart-o"></span>
+							<span id="mati5" class="fa fa-heart-o"></span>
+						</div>
+							<span id="idup1" class="fa fa-heart"></span>
+							<span id="idup2" class="fa fa-heart"></span>
+							<span id="idup3" class="fa fa-heart"></span>
+							<span id="idup4" class="fa fa-heart"></span>
+							<span id="idup5" class="fa fa-heart"></span>
+							<label id="life" class="life"></label>
+					</div>
+	  			</li>
+				<li>
+					<div class="main-game-TF">
+						<table style="align-content: center;">
+							<td>
+								<img id="imageT" class="imageTF" src="assets/img/tf-true.png">
+							</td>
+							<td>					
+								<img id="imageF" class="imageTF" src="assets/img/tf-false.png">				
+							</td>
+						</table>	
+					</div>
+				</li>
+				<li>
+					<div class="fbshare">
+		  				<div class="textfb">
+		  					<span>Share to your "FRIEND"</span>
+		  				</div>
+		  				
+		  				<!-- API Facebook -->
+		  				<div class="tombolfb">
+		  					<div class="fb-share-button" data-href="http://tebakgambar.xyz" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Bagikan</a></div>
+		  				</div>
+	  				</div>	
+				</li>
+				<li>
+					<div class="instagram">
+						<div class="textinstagram">
+							<span>INSTAGRAM!</span>
+						</div>
+						<!-- API Instagram -->
+						<div id="widget ">
+						  <div class="btn-o bg-blue" data-scribe="component:button" style="width: 50%;"><a href="https://www.instagram.com/?hl=en" class="btn" id="b"><i class="fa fa-instagram ft14"></i><span class="label" id="l">Instagram</span></a></div>
+						</div>
+					
+	 				</div>	
+				</li>
+  		</div>
+  	</div>
+  </div>
+</div>
+<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#button_nama").click(function()
+			{
+				$("p").append("<br>"+$("#text_nama").val()+" ");
+			})
+		})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+html, body{
+	overflow-x: hidden; 
+	overflow-y: hidden;
+}
+.header{
+	position: absolute;
+	height: 45px;
+	width: 100%;
+	background-color: #29C5FF;
+	z-index: 4;
+	padding-left: 5px;
+	transition: all 0.5s;
+}
+.header:hover{
+	background-color: #2ECC71;
+}
+.header img{
+	width: 50px;
+	height: 50px;
+}
+.header a{
+	font-size: 30px;
+	color: #34495e;
+	font-family: "Arial Black";
+}
+/*------------------------------------*/
+
+
+.img-size{
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 175px;
+	height: 175px;
+	border-radius: 100%;
+}
+.nim{
+	font-size: 16px;
+}
+
+/*HowTo Text*/
+.howto-text p{
+	margin-right: 40px;
+	margin-left: 40px;
+	text-align: justify;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+
+/*Description Text*/
+.description-text{
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: justify;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+}
+/*Right Content*/
+.right-content{
+	border-left: 5px solid #F39C12;
+	border-bottom: 5px solid #F39C12;
+	background-color: #34495E;
+	margin-top: 45px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.right-content li{
+	list-style: none;
+}
+/*Facebook*/
+.fbshare{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	transition: all 0.5s;
+}
+.fbshare:hover{
+	background-color: #00BFA5;
+}
+.textfb{
+	color: white;
+	font-size: 15px;
+}
+.tombolfb{
+}
+
+/*Instagram*/
+.instagram{
+	padding-top: 5px;
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	transition: all 0.5s;
+}
+.instagram:hover{
+	background-color: #1DE9B6; 
+}
+.texttinstagram{
+	font-size: 15px;
+	color: white;
+}
+.tombolinstagram{
+	text-align: left;
+}
+/*------------------------------------*/
+
+
+/*Main Content*/
+.main-content{
+	padding-top: 45px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.side-nav{
+	position: absolute;
+	font-size: 15px;
+	font-family: "Arial Black";
+	width: 100%;
+	background-color: #34495E;
+	height: 100vh;
+	padding-top: 45px;
+	z-index: 3;
+}
+.side-nav ul{
+	list-style: none;;
+	padding: 0;
+	margin: 0;
+}
+.side-nav ul li{
+	padding: 20px 10px;
+	border-bottom: 1px solid #333;
+	border-right: 5px solid #F39C12;
+	transition: all 0.3s;
+}
+.side-nav ul li:hover{
+	background-color: #2C3E50;
+	text-align: center;
+	color: #1ABC9C;
+}
+.side-nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.side-nav ul li a span{
+	color: #95A5A6;
+}
+.side-nav ul li a span:hover{
+	color: #1ABC9C;
+}
+
+@media screen and (min-width: 600px){
+	.side-nav{
+		width: 50px;
+	}
+	.side-nav ul li{
+		text-align: center;
+	}
+	.side-nav ul li span:nth-child(2){
+		display: none;
+	}
+	.side-nav ul li i{
+		font-size: 26px;
+	}
+}
+@media screen and (min-width: 1000px){
+	.side-nav{
+		width: 200px;
+	}
+	.side-nav ul li{
+		text-align: left;
+	}
+	.side-nav ul li span:nth-child(2){
+		display: inline;	
+	}
+	.side-nav ul li i{
+		font-size: 16px;
+	}/*
+	.main-content{
+		margin-left: 200px;
+	}*/
+}
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+  @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.ft14 {
+font-size: 20px !important;
+  color:red;
+  
+}
+.bg-blue{
+background-color: #1b95e0 !important;
+  color:#fffff;
+}
+
+i{
+  
+    color:#fffff !important;
+}
